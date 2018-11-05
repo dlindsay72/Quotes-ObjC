@@ -6,18 +6,24 @@
 //  Copyright © 2018 Dan Lindsay. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "QuotesVC.h"
 
-@interface ViewController ()
+@interface QuotesVC ()
 
 @end
 
-@implementation ViewController
+@implementation QuotesVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    NSLog(@"This is called from View Did Load");
+    
+    
 }
 
 
+- (IBAction)nextBtnPressed:(id)sender {
+    self.titleLbl.backgroundColor = [UIColor greenColor];
+}
 @end
